@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICSD</title>
+  <link rel="stylesheet" href="css_code/style.css" />
+  <link rel="stylesheet" href="css_code/styleAnnoun.css" />
+</head>
+
+<body onload="limitText()">
+  <!-- Start of the header -->
+  <div id="header" style="background-color: black">
+    <div class="container">
+      <nav> 
+        <img src="pics/logo_kiklos_white.png" class="black_logo" />
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="administrativeStaff.html">Administrative Staff</a></li>
+          <li><a href="underGraduateStudies.html">UnderGraduate Studies</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+    <!-- End of the header -->
+
+    <div id="title">Announcements</div>
+
+    <div class="header-text" style="margin-top: 50px">
+      <div class="about-list">
+        <h4 id="h4-1" onclick="openPopup('h4-1')">
+          <div class="Date">
+            <p class="current-date"></p>
+          </div>
+          One here are many variations of passages of Lorem Ipsum available,
+          but the majority have suffered alteration in some form, by
+          injected humour, or randomised words which don't look even
+          slightly believable.
+        </h4>
+      </div>
+    </div>
+
+    <div class="header-text" style="margin-top: 30px">
+      <div class="about-list">
+        <h4 id="h4-2" onclick="openPopup('h4-2')">
+          <div class="Date">
+            <p class="current-date"></p>
+          </div>
+          Two here 2 are many variations of passages of Lorem Ipsum
+          available, but the majority have suffered alteration in some form,
+          by injected humour, or randomised words which don't look even
+          slightly believable.
+        </h4>
+      </div>
+    </div>
+
+    <div class="header-text" style="margin-top: 30px">
+      <div class="about-list">
+        <h4 id="h4-3" onclick="openPopup('h4-3')">
+          <div class="Date">
+            <p class="current-date"></p>
+          </div>
+          Three here are many variations of passages of Lorem Ipsum
+          available, but the majority have suffered alteration in some form,
+          by injected humour, or randomised words which don't look even
+          slightly believable.There are many variations of passages of Lorem
+          Ipsum available, but the majority have suffered alteration in some
+          form, by injected humour, or randomised words which don't look
+          even slightly believable. If you are going to use a passage of
+          Lorem Ipsum, you need to be sure there isn't anything embarrassing
+          hidden in the middle of text.
+        </h4>
+      </div>
+    </div>
+
+    <div class="header-text" style="margin-top: 30px">
+      <div class="about-list">
+        <h4 id="h4-4" onclick="openPopup('h4-4')">
+          <div class="Date">
+            <p class="current-date"></p>
+          </div>
+          Fout here are many variations of passages of Lorem Ipsum
+          available, but the majority have suffered alteration in some form,
+          by injected humour, or randomised words which don't look even
+          slightly believable.
+        </h4>
+      </div>
+    </div>
+
+    <div class="header-text" style="margin-top: 30px">
+      <div class="about-list">
+        <h4 id="h4-5" onclick="openPopup('h4-5')">
+          <div class="Date">
+            <p class="current-date"></p>
+          </div>
+          Five here are many variations of passages of Lorem Ipsum
+          available, but the majority have suffered alteration in some form,
+          by injected humour, or randomised words which don't look even
+          slightly believable. Many desktop publishing packages and web page
+          editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in
+          their infancy. Various versions have evolved over the years,
+          sometimes by accident, sometimes on purpose (injected humour and
+          the like).
+        </h4>
+      </div>
+    </div>
+
+    <div class="header-text" style="margin-top: 30px">
+      <div class="about-list">
+        <h4 id="h4-6" onclick="openPopup('h4-6')">
+          <div class="Date">
+            <p class="current-date"></p>
+          </div>
+          Here are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly
+          believable.
+        </h4>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // JavaScript for menu toggle functionality
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+          document.querySelector('nav ul').classList.toggle('show');
+        });
+      });
+    </script>
+    <script>
+      /* The right think to do so we can get the date is to save the announcement to a DB with the date it has but for now
+           we  right this to just see the functionality of the Date function in js */
+
+      var currentDate = new Date();
+      var months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      var formattedDate =
+        months[currentDate.getMonth()] +
+        " " +
+        currentDate.getDate() +
+        ", " +
+        currentDate.getFullYear();
+
+      var currentDates = document.querySelectorAll(".current-date");
+
+      for (var i = 0; i < currentDates.length; i++) {
+        currentDates[i].textContent = formattedDate;
+      }
+    </script>
+</body>
+
+</html>

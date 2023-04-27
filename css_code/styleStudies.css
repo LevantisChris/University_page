@@ -1,0 +1,200 @@
+#studies {
+  padding: 80px 0;
+  color: #ababab;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.studies-col-1 {
+  flex-basis: 35%; /* We put it in the dezia */
+}
+
+.studies-col-1 img {
+  width: 100%;
+  border-radius: 15px; /* we make it rounded */
+}
+
+.studies-col-2 {
+  flex-basis: 60%;
+}
+
+#header-studies {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(1, 1, 56);
+  background-image: url(pics/jellyfish_blue_transparent.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.tablesSem {
+  width: 100%;
+  margin-bottom: 60px;
+  background-color: rgb(1, 1, 56);
+  border: 2px solid rgb(1, 1, 56);
+  border-radius: 25px;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  /*background:rgb(0, 0, 145);*/
+}
+
+/* First Semester */
+#semesterCaptionOne {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+}
+
+#tableStudiesOne {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#tableStudiesOne thead tr {
+  background-color: #0c0e25;
+  color: #ffffff;
+  text-align: left;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: purple;
+}
+
+#tableStudiesOne th,
+#tableStudiesOne td {
+  text-align: center;
+  font-weight: 900;
+  padding: 12px 15px;
+}
+
+#tableStudiesOne tr {
+  border-bottom: 1px solid #ffffff;
+}
+
+#tableStudiesOne tr:nth-of-type(even) {
+  background-color: #000000;
+}
+
+#tableStudiesOne tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+#tableStudiesOne thead tr td {
+  text-align: center;
+}
+
+/* Second Semester */
+#semesterCaptionTwo {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#tableStudiesTwo {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#tableStudiesTwo thead tr {
+  background-color: #0c0e25;
+  color: #ffffff;
+  text-align: left;
+}
+
+#tableStudiesTwo th,
+#tableStudiesTwo td {
+  padding: 12px 15px;
+}
+
+#tableStudiesTwo tr {
+  border-bottom: 1px solid #ffffff;
+}
+
+#tableStudiesTwo tr:nth-of-type(even) {
+  background-color: #000000;
+}
+
+#tableStudiesOne tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+@media (max-width: 668px) {
+  #tableStudiesOne {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 10px;
+    font-family: sans-serif;
+    min-width: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  #semesterCaptionOne {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+@media (max-width: 562px) {
+  #tableStudiesOne {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 5px;
+    font-family: sans-serif;
+    min-width: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  #semesterCaptionOne {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+@media (max-width: 384px) {
+  #tableStudiesOne {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 5px;
+    font-family: sans-serif;
+    min-width: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  #semesterCaptionOne {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+  }
+}

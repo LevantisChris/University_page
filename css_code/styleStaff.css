@@ -1,0 +1,67 @@
+#header-staff {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(1, 1, 56);
+  background-image: url(pics/hologram_abstraction_blue.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#staff {
+  padding: 30px 0;
+}
+
+.staff-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+/* For all the divs */
+.staff-list div {
+  background: rgb(1, 1, 56);
+  text-align: center;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+/* for the icons */
+.staff-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.staff-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.staff-list div a {
+  text-decoration: none;
+  color: rgb(1, 1, 56);
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.staff-list div a {
+  font-size: 2rem;
+  color: wheat;
+}
+
+/* Wherever the user takes the cursor in the boxes */
+.staff-list div:hover {
+  background: rgb(0, 0, 255);
+  transform: translate(-10px);
+}
+
+@media (max-width: 1020px) {
+  .staff-list {
+    grid-template-columns: 1fr;
+  }
+}

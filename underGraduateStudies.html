@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICSD</title>
+  <link rel="stylesheet" href="css_code/style.css" />
+  <link rel="stylesheet" href="css_code/styleStudies.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.8/xlsx.full.min.js"></script>
+</head>
+
+<body>
+  <!-- Start of the header -->
+  <div id="header-studies">
+    <div class="container">
+      <nav>
+        <img src="pics/logo_kiklos_white.png" class="black_logo" />
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="administrativeStaff.html">Administrative Staff</a></li>
+          <li><a href="underGraduateStudies.html">UnderGraduate Studies</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <div class="header-text">
+        <p>ICSD</p>
+        <h1>
+          Here you can see all the<br />under-graduate subjects<br />of our
+          University
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- End of the header -->
+
+  <div id="studies">
+    <div class="container">
+      <div class="tablesSem">
+        <!--Start of first Sem-->
+        <div id="semesterCaptionOne">First semester</div>
+        <table id="tableStudiesOne" border="1">
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Title</th>
+              <th>Theory hours</th>
+              <th>Lab hours</th>
+              <th>ECTS</th>
+            </tr>
+            </tr>
+            <tr>
+              <td>321-0121</td>
+              <td><a href="english1.html" class="link">English Language 1</td>
+              <td>3</td>
+              <td>0</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>321-1501</td>
+              <td><a href="descreteMath.html" class="link">Discrete Mathematics I</td>
+              <td>3</td>
+              <td>0</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>321-1204</td>
+              <td><a href="c_lesson.html" class="link">Structured Programming </td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>321-1407</td>
+              <td><a href="introToComputerScienceAndComm.html" class="link">Introduction to Computer Science and Communications</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <!--End of first Sem-->
+      </div>
+
+      <div class="tablesSem">
+        <!--Start of first Sem-->
+        <div id="semesterCaptionOne">Second semester</div>
+        <table id="tableStudiesOne" border="1">
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Title</th>
+              <th>Theory hours</th>
+              <th>Lab hours</th>
+              <th>ECTS</th>
+            </tr>
+            </tr>
+            <tr>
+              <td>321-0121</td>
+              <td><a href="#" class="link">SubjExample1</td>
+              <td>3</td>
+              <td>0</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>321-1501</td>
+              <td><a href="#" class="link">SubjExample1</td>
+              <td>3</td>
+              <td>0</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>321-1204</td>
+              <td><a href="#" class="link">SubjExample1</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>321-1407</td>
+              <td><a href="#" class="link">SubjExample1</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <!--End of first Sem-->
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // JavaScript for menu toggle functionality
+      document.querySelector('.menu-toggle').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.toggle('show');
+      });
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+.container {
+  background-image: none;
+  background-color: black;
+}
+
+#title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 60px;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-image: none;
+}
+
+#header-text {
+  padding: 30px 0;
+}
+
+.header-text {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.about-list {
+  background: rgba(0, 0, 77, 0.5);
+  text-align: center;
+  padding: 40px;
+  font-size: 25px;
+  font-weight: 300;
+  border-radius: 25px;
+  grid-column: 1 / -1;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.about-list p {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.about-list h1 {
+  font-size: 70px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Wherever the user takes the cursor in the boxes */
+.about-list:hover {
+  background: rgb(0, 0, 78);
+  transform: translate(-10px);
+}
+
+/* The following code is for the date */
+.date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.date p {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 612px) {
+  .about-list p {
+    font-size: 20px;
+  }
+
+  .about-list h1 {
+    font-size: 40px;
+  }
+
+  .about-list {
+    font-size: 15px;
+  }
+
+  #title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICSD</title>
+    <link rel="stylesheet" href="css_code/style.css" />
+    <link rel="stylesheet" href="css_code/styleAllLessons.css" />
+    <script src="https://kit.fontawesome.com/6402c02530.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Start of the header -->
+  <div id="header-lesson">
+    <div class="container">
+      <nav>
+        <img src="pics/logo_kiklos_white.png" class="black_logo" />
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="administrativeStaff.html">Administrative Staff</a></li>
+          <li><a href="underGraduateStudies.html">UnderGraduate Studies</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <div class="header-text">
+        <p>ICSD</p>
+        <h1>
+          Lesson:
+          <span style="font-family: Copperplate, Papyrus, fantasy"
+            >Introduction to Computer<br>Science and Communications</span
+          ><br />
+          Professor: Stamatis-Gonidis
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- End of the header -->
+
+    <div id="lesson">
+      <div class="container">
+        <h1 class="sub-title">Description of the lesson</h1>
+        <div class="info-list">
+          <div>
+            <i class="fa-brands fa-readme"></i>
+            <h2>Basic Info</h2>
+            <p>
+                <table class="basic-info" style="width: 100%;">
+                    <tbody>
+                        <tr>
+                            <th><b>Title</b></th>
+                            <th>Introduction to Computer Science and Communications</th>
+                        </tr>
+                        <tr>
+                            <th><b>Lesson Code</b></th>
+                            <th >321-1501</th>
+                        </tr>
+                        <tr>
+                            <th ><b>Semester</b></th>
+                            <th >1</th>
+                        </tr>
+                        <tr>
+                            <th ><b>ECTS</b></th>
+                            <th >5</th>
+                        </tr>
+                        <tr>
+                            <th ><b>Hours (Theory)</b></th>
+                            <th >3</th>
+                        </tr>
+                        <tr>
+                            <th ><b>Hours (Lab)</b></th>
+                            <th >4</th>
+                        </tr>
+                        <tr>
+                            <th ><b>Faculty</b></th>
+                            <th >Stamatis-Gonidis</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-sharp fa-solid fa-bookmark"></i>
+            <h2>Syllabus</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
+                type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-envelope-circle-check"></i>
+            <h2>Learning Outcomes</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+                took a galley of type and scrambled it to make a type specimen book. It has survived not only five 
+                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was 
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                recently with desktop publishing software 
+                like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // JavaScript for menu toggle functionality
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+          document.querySelector('nav ul').classList.toggle('show');
+        });
+      });
+  
+    </script>
+  </body>
+</html>

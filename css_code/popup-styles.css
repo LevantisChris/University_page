@@ -1,0 +1,9 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.about-list h4 {
+  border: 2px solid rgb(1, 1, 255);
+  padding: 10px;
+}

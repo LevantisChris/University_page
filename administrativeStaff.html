@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICSD</title>
+  <link rel="stylesheet" href="css_code/style.css" />
+  <link rel="stylesheet" href="css_code/styleStaff.css" />
+  <script src="https://kit.fontawesome.com/6402c02530.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Start of the header -->
+  <div id="header-staff">
+    <div class="container">
+      <nav>
+        <img src="pics/logo_kiklos_white.png" class="black_logo" />
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="administrativeStaff.html">Administrative Staff</a></li>
+          <li><a href="underGraduateStudies.html">UnderGraduate Studies</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <div class="header-text">
+        <p>ICSD</p>
+        <h1>
+          Here you can see all the<br />amazing staff<br />of our University
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- End of the header -->
+
+  <!-- Start of the Staff -->
+  <div id="staff">
+    <div class="container">
+      <h1 class="sub-title">Our Staff</h1>
+      <div class="staff-list">
+
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Academic</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book.
+          </p>
+          <a href="academicStaff.html">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-code-commit"></i>
+          <h2>Lab Staff</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book.
+          </p>
+          <a href="labStaff.html">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-codepen"></i>
+          <h2>Other</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book.
+          </p>
+          <a href="otherStaff.html">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // JavaScript for menu toggle functionality
+      document.querySelector('.menu-toggle').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.toggle('show');
+      });
+    });
+
+  </script>
+</body>
+
+</html>
